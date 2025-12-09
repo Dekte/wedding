@@ -24,7 +24,7 @@ export const CONFIG = {
 
   // HERO SECTION
   hero: {
-    backgroundUrl: "asset/20251128_201556_493~2.mp4",
+    backgroundUrl: "https://res.cloudinary.com/dwynj78fg/video/upload/v1765305189/20251128_201556_493_2_drlfgn.mp4",
     marqueeText:
       "SAVE THE DATE +++ WEDDING OF THE CENTURY +++ ALEX & SAM +++ DEC 31 2025 +++ LOADING HAPPINESS...",
     title: "THE WEDDING",

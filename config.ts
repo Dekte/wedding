@@ -10,7 +10,7 @@ export const CONFIG = {
     // Optional image to render inside intro profile box. If provided, the
     // app will render this image. Path is relative to project root (e.g.
     // `asset/your-image.jpg`).
-    profileImage: "asset/2025_10_16_06_06_IMG_7503 (Small).JPG",
+    profileImage: "https://res.cloudinary.com/dwynj78fg/image/upload/v1765305830/WhatsApp_Image_2025-12-08_at_05.08.32_deckdz.jpg",
     profileAlt: "Couple initials",
     // Tailwind classes applied to the image. Defaults to cover/full size.
     profileClasses: "object-cover w-full h-full",
@@ -83,12 +83,12 @@ export const CONFIG = {
 
   // GALLERY IMAGES
   gallery: [
-    "asset/Generated Image October 17, 2025 - 2_31AM (Large).png",
-    "asset/IMG_7683_20251128_201355_3600 (Large).jpeg",
-    "asset/IMG_7684_20251128_201412_3600 (Large).jpeg",
-    "asset/WhatsApp Image 2025-12-08 at 15.32.18 (Small).jpeg",
-    "asset/IMG_7688_20251128_201520_3600 (Large).jpeg",
-    "asset/IMG_7685_20251128_201429_3600 (Large).jpeg",
+    "https://res.cloudinary.com/dwynj78fg/image/upload/v1765305212/Generated_Image_October_17_2025_-_2_31AM_Large_mt2lsn.png",
+    "https://res.cloudinary.com/dwynj78fg/image/upload/v1765305183/IMG_7685_20251128_201429_3600_Large_qwkpam.jpg",
+    "https://res.cloudinary.com/dwynj78fg/image/upload/v1765305162/IMG_7684_20251128_201412_3600_Large_z7jz3j.jpg",
+    "https://res.cloudinary.com/dwynj78fg/image/upload/v1765305142/WhatsApp_Image_2025-12-08_at_15.32.18_Small_ifclzt.jpg",
+    "https://res.cloudinary.com/dwynj78fg/image/upload/v1765305142/IMG_7688_20251128_201520_3600_Large_dtpl5u.jpg",
+    "https://res.cloudinary.com/dwynj78fg/image/upload/v1765305164/IMG_7683_20251128_201355_3600_Large_xwbb9l.jpg",
   ],
 
   // GIFTS / BANK

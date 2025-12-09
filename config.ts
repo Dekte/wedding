@@ -1,70 +1,116 @@
-
 export const CONFIG = {
   // MUSIC
-  // Upload your own mp3 to a hosting service or use a public URL.
   audio: {
-    bgmUrl: "https://cdn.pixabay.com/download/audio/2022/11/22/audio_febc508520.mp3?filename=8-bit-arcade-138828.mp3",
+    bgmUrl:
+      "asset/Timur - The Adams.mp3",
+  },
+
+  // Intro overlay customization
+  intro: {
+    // Optional image to render inside intro profile box. If provided, the
+    // app will render this image. Path is relative to project root (e.g.
+    // `asset/your-image.jpg`).
+    profileImage: "asset/2025_10_16_06_06_IMG_7503 (Small).JPG",
+    profileAlt: "Couple initials",
+    // Tailwind classes applied to the image. Defaults to cover/full size.
+    profileClasses: "object-cover w-full h-full",
+    // Fallback HTML fragment (kept for backward compatibility)
+    profileHtml:
+      '<div class="w-full h-full flex items-center justify-center text-black font-pixel text-lg">A &amp; S</div>',
   },
 
   // DATES
-  weddingDate: "2025-12-31T18:00:00", // ISO Format: YYYY-MM-DDTHH:MM:SS
+  weddingDate: "2025-12-14T08:00:00",
 
   // HERO SECTION
   hero: {
-    backgroundUrl: "https://picsum.photos/1920/1080?grayscale&blur=2",
-    marqueeText: "SAVE THE DATE +++ WEDDING OF THE CENTURY +++ ALEX & SAM +++ DEC 31 2025 +++ LOADING HAPPINESS...",
+    backgroundUrl: "asset/20251128_201556_493~2.mp4",
+    marqueeText:
+      "SAVE THE DATE +++ WEDDING OF THE CENTURY +++ ALEX & SAM +++ DEC 31 2025 +++ LOADING HAPPINESS...",
     title: "THE WEDDING",
-    subtitle: "We are getting married and it's going to be chaotic, beautiful, and totally us.",
+    subtitle:
+      "We are getting married and it's going to be chaotic, beautiful, and totally us.",
   },
 
-  // COUNTDOWN & LOCATION
+  // LOCATION SECTION
   location: {
-    dateDisplay: "31 DEC",
-    timeDisplay: "18:00 PM - Until we drop",
-    placeName: "Neon City Hall, Sector 7",
-    address: "123 Cyberpunk Avenue, Tokyo",
-    mapLink: "https://maps.google.com", // Link to open in Google Maps App
-    // Google Maps Embed URL (Get this from Google Maps > Share > Embed a map)
-    mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.828030598889!2d139.7649363116035!3d35.68123617246949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f7007%3A0x277c49ba34ed38!2sTokyo%20Station!5e0!3m2!1sen!2sus!4v1709283746251!5m2!1sen!2sus",
-    coordinates: "35.6812° N, 139.7671° E",
+    dateDisplay: "14 DEC",
+    timeDisplay: "08:00 PM - Until we drop",
+    placeName: "Mempelai Wanita",
+    address: "Dsn. Tlogoarum Rt.01/Rt.05  Ds. Sidorejo Kec. Doko Kab.Blitar",
+    mapLink: "https://maps.app.goo.gl/9gRdBe6UunTnFBHu6",
+    mapEmbedUrl:
+      "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3950.4556364527057!2d112.396907!3d-8.054917999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMDMnMTcuNyJTIDExMsKwMjMnNDguOSJF!5e0!3m2!1sid!2sid!4v1765195944241!5m2!1sid!2sid",
+    coordinates: "8°03'17.7° S, 112°23'48.9° E",
+
+    events: {
+      akad: {
+        title: "Akad Nikah",
+        time: "08:00 WIB",
+      },
+      resepsi: {
+        title: "Resepsi",
+        time: "13:00 WIB - 15.00 WIB",
+      },
+      walimah: {
+        title: "Walimah Al-'ursy",
+        time: "19:00 WIB - Till Drop",
+      },
+    },
   },
 
   // COUPLE PROFILES
   couple: {
     groom: {
-      name: "ALEX",
-      level: "LVL 28",
-      photo: "https://picsum.photos/400/400?grayscale&random=2",
+      name: "Dycta",
+      level: "LVL 23",
+      photo: "asset/2025_10_16_06_20_IMG_7537 (Small).JPG",
       class: "Paladin",
-      likes: "Retro Games, Sushi",
-      quote: "Game Over for single life.",
-      instagramUrl: "https://instagram.com",
+      likes: "im blue, ",
+      quote: "Trust me, I watched a tutorial once.",
+      instagramUrl: "https://instagram.com/separuh_manusiaa",
     },
     bride: {
-      name: "SAM",
-      level: "LVL 27",
-      photo: "https://picsum.photos/400/400?grayscale&random=1",
+      name: "April",
+      level: "LVL 22",
+      photo: "asset/2025_10_16_06_15_IMG_7517 (Small).JPG",
       class: "Mage",
-      likes: "Cats, Coding",
+      likes: "Cats, pink and money",
       quote: "Ready for the co-op campaign.",
-      instagramUrl: "https://instagram.com",
-    }
+      instagramUrl: "https://www.instagram.com/apriliaalifaturr/",
+    },
   },
 
   // GALLERY IMAGES
   gallery: [
-    "https://picsum.photos/600/400?random=10",
-    "https://picsum.photos/400/600?random=11",
-    "https://picsum.photos/500/500?random=12",
-    "https://picsum.photos/600/600?random=13",
-    "https://picsum.photos/600/400?random=14", // Added one more for effect
-    "https://picsum.photos/400/600?random=15",
+    "asset/Generated Image October 17, 2025 - 2_31AM (Large).png",
+    "asset/IMG_7683_20251128_201355_3600 (Large).jpeg",
+    "asset/IMG_7684_20251128_201412_3600 (Large).jpeg",
+    "asset/WhatsApp Image 2025-12-08 at 15.32.18 (Small).jpeg",
+    "asset/IMG_7688_20251128_201520_3600 (Large).jpeg",
+    "asset/IMG_7685_20251128_201429_3600 (Large).jpeg",
   ],
 
-  // GIFT / BANK DETAILS
+  // GIFTS / BANK
   gift: {
-    bankName: "BANK CENTRAL ASIA (BCA)",
-    accountNumber: "123 456 7890",
-    accountHolder: "ALEX & SAM",
-  }
+  banks: [
+    {
+      bankName: "DANA",
+      accountNumber: "0882009564652",
+      accountHolder: "APRILIA ALIFATURROHMA",
+    },
+    // Kamu bisa tambah bank lain
+    {
+      bankName: "BNI",
+      accountNumber: "1931284725",
+      accountHolder: "APRILIA ALIFATURROHMAH",
+    },
+      {
+      bankName: "Seabank",
+      accountNumber: "901480930796",
+      accountHolder: "DYCTA ZAKY FIRMANSYAH",
+    }
+  ]
+}
+
 };

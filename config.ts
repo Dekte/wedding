@@ -2,7 +2,7 @@ export const CONFIG = {
   // MUSIC
   audio: {
     bgmUrl:
-      "https://music.youtube.com/watch?v=cCoDqaj_pWs",
+      "https://res.cloudinary.com/dwynj78fg/video/upload/v1765305404/Timur_-_The_Adams_br4rvj.mp3",
   },
 
   // Intro overlay customization
@@ -64,7 +64,7 @@ export const CONFIG = {
     groom: {
       name: "Dycta",
       level: "LVL 23",
-      photo: "asset/2025_10_16_06_20_IMG_7537 (Small).JPG",
+      photo: "https://res.cloudinary.com/dwynj78fg/image/upload/v1765305137/2025_10_16_06_20_IMG_7537_Small_otjhvm.jpg",
       class: "Paladin",
       likes: "im blue, ",
       quote: "Trust me, I watched a tutorial once.",
@@ -73,7 +73,7 @@ export const CONFIG = {
     bride: {
       name: "April",
       level: "LVL 22",
-      photo: "asset/2025_10_16_06_15_IMG_7517 (Small).JPG",
+      photo: "https://res.cloudinary.com/dwynj78fg/image/upload/v1765305163/profil_april_nrsclh.jpg",
       class: "Mage",
       likes: "Cats, pink and money",
       quote: "Ready for the co-op campaign.",

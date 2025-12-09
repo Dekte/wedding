@@ -2,7 +2,7 @@ export const CONFIG = {
   // MUSIC
   audio: {
     bgmUrl:
-      "asset/Timur - The Adams.mp3",
+      "https://music.youtube.com/watch?v=cCoDqaj_pWs",
   },
 
   // Intro overlay customization

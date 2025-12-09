@@ -47,6 +47,9 @@ export const CONFIG = {
       akad: {
         title: "Akad Nikah",
         time: "08:00 WIB",
+      },  Temu: {
+        title: "Temu Manten",
+        time: "13:00 WIB - 15.00 WIB",
       },
       resepsi: {
         title: "Resepsi",

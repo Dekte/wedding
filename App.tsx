@@ -13,6 +13,7 @@ export default function App() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
   const [scrollY, setScrollY] = useState(0);
   const [showEnableMusicPrompt, setShowEnableMusicPrompt] = useState(false);
+    const [showCantCome, setShowCantCome] = useState(false);
 
   // Parse URL for guest name
   useEffect(() => {
@@ -330,50 +331,59 @@ export default function App() {
         </div>
       </section>
 
-          {/* --- GIFT SECTION --- */}
-          <section className="relative z-10 py-20 px-4 bg-gray-100 text-black border-t-8 border-pink-500">
-            <div className="max-w-4xl mx-auto px-4">
-              <div className="bg-white border-4 border-black p-8 shadow-[8px_8px_0_0_rgba(0,0,0,0.2)]">
-                <h3 className="text-3xl font-pixel mb-2 text-center">GIFT TRANSFER PROTOCOL</h3>
-                <p className="font-console text-lg text-center mb-6">Your presence is the greatest present. If you'd like to contribute to our honeymoon fund, you can transfer to one of the accounts below.</p>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                  {CONFIG.gift.banks.map((bank, index) => (
-                    <div key={index} className="flex flex-col h-full bg-gray-50 border border-black/10 rounded-lg p-4 shadow-sm">
-                      <div className="mb-2 text-sm text-gray-600 font-console">{bank.bankName}</div>
-                      <div className="font-pixel text-2xl tracking-widest text-center my-2">{bank.accountNumber}</div>
-                      <div className="text-center text-sm text-gray-700 mb-4">A/N {bank.accountHolder}</div>
-
-                      <div className="mt-auto flex items-center justify-center gap-3">
-                        <button
-                          onClick={() => navigator.clipboard.writeText(bank.accountNumber).then(() => alert(`${bank.bankName} NUMBER COPIED!`))}
-                          className="flex items-center gap-2 bg-black text-white px-4 py-2 font-pixel text-sm rounded hover:bg-gray-800"
-                        >
-                          <Copy size={14} /> COPY
-                        </button>
-
-                        <a
-                          href={`https://wa.me/62882009564652/?text=${encodeURIComponent(`Halo, saya ingin mengirim hadiah ke ${bank.bankName} ${bank.accountNumber} atas nama ${bank.accountHolder}`)}`}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="flex items-center gap-2 bg-green-500 text-black px-4 py-2 font-pixel text-sm rounded hover:brightness-95"
-                        >
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="inline-block">
-                            <path d="M20.52 3.48L3.48 20.52" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                            <path d="M19 3H14L13 8L21 6L19 3Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                          </svg>
-                          SEND
-                        </a>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="mt-6 text-center text-sm text-gray-500">ありがとうございました</div>
-              </div>
+           {/* --- GIFT SECTION (hidden behind toggle) --- */}
+          <div className="relative z-10 py-12 px-4 bg-transparent">
+            <div className="max-w-4xl mx-auto px-4 text-center">
+              <PixelButton onClick={() => setShowCantCome(v => !v)} className="mx-auto">Kamu tidak bisa datang?</PixelButton>
             </div>
-          </section>
+
+            {showCantCome && (
+              <section className="relative z-10 py-20 px-4 bg-gray-100 text-black border-t-8 border-pink-500 mt-6">
+                <div className="max-w-4xl mx-auto px-4">
+                  <div className="bg-white border-4 border-black p-8 shadow-[8px_8px_0_0_rgba(0,0,0,0.2)]">
+                    <h3 className="text-3xl font-pixel mb-2 text-center">GIFT TRANSFER PROTOCOL</h3>
+                    <p className="font-console text-lg text-center mb-6">Your presence is the greatest present. If you'd like to contribute to our honeymoon fund, you can transfer to one of the accounts below.</p>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                      {CONFIG.gift.banks.map((bank, index) => (
+                        <div key={index} className="flex flex-col h-full bg-gray-50 border border-black/10 rounded-lg p-4 shadow-sm">
+                          <div className="mb-2 text-sm text-gray-600 font-console">{bank.bankName}</div>
+                          <div className="font-pixel text-2xl tracking-widest text-center my-2">{bank.accountNumber}</div>
+                          <div className="text-center text-sm text-gray-700 mb-4">A/N {bank.accountHolder}</div>
+
+                          <div className="mt-auto flex items-center justify-center gap-3">
+                            <button
+                              onClick={() => navigator.clipboard.writeText(bank.accountNumber).then(() => alert(`${bank.bankName} NUMBER COPIED!`))}
+                              className="flex items-center gap-2 bg-black text-white px-4 py-2 font-pixel text-sm rounded hover:bg-gray-800"
+                            >
+                              <Copy size={14} /> COPY
+                            </button>
+
+                            <a
+                              href={`https://wa.me/62882009564652/?text=${encodeURIComponent(`Halo, saya ingin mengirim hadiah ke ${bank.bankName} ${bank.accountNumber} atas nama ${bank.accountHolder}`)}`}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="flex items-center gap-2 bg-green-500 text-black px-4 py-2 font-pixel text-sm rounded hover:brightness-95"
+                            >
+                              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="inline-block">
+                                <path d="M20.52 3.48L3.48 20.52" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                <path d="M19 3H14L13 8L21 6L19 3Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                              </svg>
+                              SEND
+                            </a>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+
+                    <div className="mt-6 text-center text-sm text-gray-500">ありがとうございました</div>
+                  </div>
+                </div>
+              </section>
+            )}
+          </div>
             {/* --- FOOTER --- */}
+          
             <footer className="relative z-10 bg-black text-white py-12 text-center border-t border-gray-800">
               <GlitchText text="ITS JUST BEGINNING..." className="text-4xl font-pixel text-red-600 mb-4 block" />
               <p className="font-console text-gray-500 mb-4">CONTINUE? [Y/N]</p>

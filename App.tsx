@@ -342,7 +342,7 @@ export default function App() {
                 <div className="max-w-4xl mx-auto px-4">
                   <div className="bg-white border-4 border-black p-8 shadow-[8px_8px_0_0_rgba(0,0,0,0.2)]">
                     <h3 className="text-3xl font-pixel mb-2 text-center">GIFT TRANSFER PROTOCOL</h3>
-                    <p className="font-console text-lg text-center mb-6">Your presence is the greatest present. If you'd like to contribute to our honeymoon fund, you can transfer to one of the accounts below.</p>
+                    <p className="font-console text-lg text-center mb-6">Your presence means the world to us,and we'll surely miss anyone unable to attend. If you'd like to share your well-wishes or a gift,you may send it through the accounts below.</p>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                       {CONFIG.gift.banks.map((bank, index) => (

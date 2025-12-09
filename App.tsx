@@ -226,7 +226,7 @@ export default function App() {
               </RetroWindow>
 
               <div className="text-left space-y-6">
-                <h2 className="text-4xl font-pixel text-pink-500 mb-6 flex items-center gap-2"><Star className="fill-yellow-400 text-black" />EVENT KAMI</h2>
+                <h2 className="text-4xl font-readable text-pink-500 mb-6 flex items-center gap-2"><Star className="fill-yellow-400 text-black" />EVENT KAMI</h2>
 
                 <div className="bg-white text-black p-6 shadow-[8px_8px_0px_0px_rgba(0,0,255,1)]">
                   <div className="flex items-start gap-4 mb-4">
@@ -235,16 +235,16 @@ export default function App() {
                       <span className="text-xs uppercase block text-center">{CONFIG.location.dateDisplay.split(" ")[1]}</span>
                     </div>
                     <div>
-                      <div className="mb-2"><h3 className="font-bold font-pixel text-xl">{CONFIG.location.events.akad.title}</h3><p className="font-console text-lg">{CONFIG.location.events.akad.time}</p></div>
-                      <div className="mb-2"><h3 className="font-bold font-pixel text-xl">{CONFIG.location.events.resepsi.title}</h3><p className="font-console text-lg">{CONFIG.location.events.resepsi.time}</p></div>
-                      <div><h3 className="font-bold font-pixel text-xl">{CONFIG.location.events.walimah.title}</h3><p className="font-console text-lg">{CONFIG.location.events.walimah.time}</p></div>
+                      <div className="mb-2"><h3 className="font-bold font-readable text-xl">{CONFIG.location.events.akad.title}</h3><p className="font-console text-lg">{CONFIG.location.events.akad.time}</p></div>
+                      <div className="mb-2"><h3 className="font-bold font-readable text-xl">{CONFIG.location.events.resepsi.title}</h3><p className="font-console text-lg">{CONFIG.location.events.resepsi.time}</p></div>
+                      <div><h3 className="font-bold font-readable text-xl">{CONFIG.location.events.walimah.title}</h3><p className="font-console text-lg">{CONFIG.location.events.walimah.time}</p></div>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-4">
                     <div className="bg-black text-white p-2"><MapPin size={32} /></div>
                     <div>
-                      <h3 className="font-bold font-pixel text-xl">LOCATION</h3>
+                      <h3 className="font-bold font-readable text-xl">LOCATION</h3>
                       <p className="font-console text-lg">{CONFIG.location.placeName}<br />{CONFIG.location.address}</p>
                       <a href={CONFIG.location.mapLink} target="_blank" rel="noreferrer" className="text-blue-700 underline text-sm hover:text-blue-500">VIEW ON MAP_NET &rarr;</a>
                     </div>
@@ -259,7 +259,7 @@ export default function App() {
                 <div className="relative w-full h-[400px] border-4 border-black bg-black">
                   <iframe src={CONFIG.location.mapEmbedUrl} width="100%" height="100%" style={{ border: 0, filter: "grayscale(100%) invert(90%) contrast(1.2)" }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                   <div className="absolute top-4 left-4 bg-black/80 border border-green-500 p-2 text-green-500 font-console text-sm pointer-events-none hidden sm:block">COORDINATES: {CONFIG.location.coordinates}<br />SIGNAL: STRONG</div>
-                  <div className="absolute bottom-4 right-4 bg-red-600/20 border border-red-500 p-1 text-red-500 font-pixel animate-pulse pointer-events-none">TARGET ZONE</div>
+                  <div className="absolute bottom-4 right-4 bg-red-600/20 border border-red-500 p-1 text-red-500 font-readable animate-pulse pointer-events-none">TARGET ZONE</div>
                 </div>
               </RetroWindow>
             </div>
@@ -344,7 +344,7 @@ export default function App() {
               <section className="relative z-10 py-20 px-4 bg-gray-100 text-black border-t-8 border-pink-500 mt-6">
                 <div className="max-w-4xl mx-auto px-4">
                   <div className="bg-white border-4 border-black p-8 shadow-[8px_8px_0_0_rgba(0,0,0,0.2)]">
-                    <h3 className="text-3xl font-pixel mb-2 text-center">GIFT TRANSFER PROTOCOL</h3>
+                    <h3 className="text-3xl font-readable mb-2 text-center">GIFT TRANSFER PROTOCOL</h3>
                     <p className="font-console text-lg text-center mb-6">Your presence means the world to us,and we'll surely miss anyone unable to attend. If you'd like to share your well-wishes or a gift,you may send it through the accounts below.</p>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">

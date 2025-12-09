@@ -12,7 +12,9 @@
       body {
         background-color: #0a0a0a;
         color: #e0e0e0;
-        font-family: 'VT323', monospace;
+          font-family: 'Pixelify Sans', 'Rubik', sans-serif;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
       }
       /* Custom Scrollbar for Webkit */
       ::-webkit-scrollbar {
@@ -61,7 +63,12 @@
       }
       
       .font-pixel { font-family: 'Pixelify Sans', sans-serif; }
-      .font-console { font-family: 'VT323', monospace; }
+        /* Retro-but-readable mappings */
+          /* Retro-but-readable mappings (pixelated look but legible) */
+          .font-pixel { font-family: 'Pixelify Sans', 'Orbitron', sans-serif; }
+          .font-console { font-family: 'Pixelify Sans', 'VT323', monospace; }
+          /* Readable pixel heading font (used for Event & Gift sections and body where applied) */
+          .font-readable { font-family: 'Pixelify Sans', 'Rubik', sans-serif; font-weight:700; letter-spacing:0.02em; }
       .font-japanese { font-family: 'Zen Tokyo Zoo', cursive; }
 
       @keyframes float {

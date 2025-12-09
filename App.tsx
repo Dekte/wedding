@@ -332,7 +332,7 @@ export default function App() {
         </div>
       </section>
 
-      <GuestBookAI />
+      {/* <GuestBookAI /> */}
 
            {/* --- GIFT SECTION (hidden behind toggle) --- */}
           <div className="relative z-10 py-12 px-4 bg-transparent">

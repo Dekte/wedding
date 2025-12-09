@@ -3,7 +3,7 @@ import { GoogleGenAI } from "@google/genai";
 const apiKey = process.env.API_KEY || '';
 const ai = new GoogleGenAI({ apiKey });
 
-export const generateGuestbookResponse = async (name: string, message: string): Promise<string> => {
+export const generateWeddingWish = async (name: string, message: string): Promise<string> => {
   try {
     const model = 'gemini-2.5-flash';
     const prompt = `

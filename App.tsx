@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { RetroWindow, GlitchText, PixelButton } from "./components/RetroUI";
 import { MapPin, Copy, Heart, Star, Disc, X, Instagram } from "lucide-react";
 import { CONFIG } from "./config";
+import { GuestBookAI } from "./component/GuestBookAI";
 
 const WEDDING_DATE = new Date(CONFIG.weddingDate);
 
@@ -331,10 +332,12 @@ export default function App() {
         </div>
       </section>
 
+      <GuestBookAI />
+
            {/* --- GIFT SECTION (hidden behind toggle) --- */}
           <div className="relative z-10 py-12 px-4 bg-transparent">
             <div className="max-w-4xl mx-auto px-4 text-center">
-              <PixelButton onClick={() => setShowCantCome(v => !v)} className="mx-auto">Kamu tidak bisa datang?</PixelButton>
+              <PixelButton onClick={() => setShowCantCome(v => !v)} className="mx-auto">Kamu tidak bisa datang? <br/> tekan aku!</PixelButton>
             </div>
 
             {showCantCome && (

@@ -49,7 +49,7 @@ export const CONFIG = {
         time: "08:00 WIB",
       },  Temu: {
         title: "Temu Manten",
-        time: "13:00 WIB - 15.00 WIB",
+        time: "10:00 WIB - 12.00 WIB",
       },
       resepsi: {
         title: "Resepsi",
@@ -92,6 +92,7 @@ export const CONFIG = {
     "https://res.cloudinary.com/dwynj78fg/image/upload/v1765305142/WhatsApp_Image_2025-12-08_at_15.32.18_Small_ifclzt.jpg",
     "https://res.cloudinary.com/dwynj78fg/image/upload/v1765305142/IMG_7688_20251128_201520_3600_Large_dtpl5u.jpg",
     "https://res.cloudinary.com/dwynj78fg/image/upload/v1765305164/IMG_7683_20251128_201355_3600_Large_xwbb9l.jpg",
+    "https://res.cloudinary.com/dwynj78fg/image/upload/v1765320267/WhatsApp_Image_2025-12-10_at_05.38.31_qewkze.jpg"
   ],
 
   // GIFTS / BANK

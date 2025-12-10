@@ -4,6 +4,7 @@ import { MapPin, Copy, Heart, Star, Disc, X, Instagram } from "lucide-react";
 import { CONFIG } from "./config";
 import { GuestBookAI } from "./component/GuestBookAI";
 
+
 const WEDDING_DATE = new Date(CONFIG.weddingDate);
 
 export default function App() {
@@ -234,8 +235,9 @@ export default function App() {
                       <span className="font-bold text-2xl font-console block text-center uppercase">{CONFIG.location.dateDisplay.split(" ")[0]}</span>
                       <span className="text-xs uppercase block text-center">{CONFIG.location.dateDisplay.split(" ")[1]}</span>
                     </div>
-                    <div>
+                    <div className="iceland-font">
                       <div className="mb-2"><h3 className="font-bold font-readable text-xl">{CONFIG.location.events.akad.title}</h3><p className="font-console text-lg">{CONFIG.location.events.akad.time}</p></div>
+                      <div className="mb-2"><h3 className="font-bold font-readable text-xl">{CONFIG.location.events.Temu.title}</h3><p className="font-console text-lg">{CONFIG.location.events.Temu.time}</p></div>
                       <div className="mb-2"><h3 className="font-bold font-readable text-xl">{CONFIG.location.events.resepsi.title}</h3><p className="font-console text-lg">{CONFIG.location.events.resepsi.time}</p></div>
                       <div><h3 className="font-bold font-readable text-xl">{CONFIG.location.events.walimah.title}</h3><p className="font-console text-lg">{CONFIG.location.events.walimah.time}</p></div>
                     </div>
@@ -349,7 +351,7 @@ export default function App() {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                       {CONFIG.gift.banks.map((bank, index) => (
-                        <div key={index} className="flex flex-col h-full bg-gray-50 border border-black/10 rounded-lg p-4 shadow-sm">
+                        <div key={index} className="flex flex-col h-full bg-gray-50 border border-black/10 rounded-lg p-4 shadow-sm iceland-font">
                           <div className="mb-2 text-sm text-gray-600 font-console">{bank.bankName}</div>
                           <div className="font-pixel text-2xl tracking-widest text-center my-2">{bank.accountNumber}</div>
                           <div className="text-center text-sm text-gray-700 mb-4">A/N {bank.accountHolder}</div>

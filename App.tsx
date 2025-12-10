@@ -349,9 +349,9 @@ export default function App() {
                     <h3 className="text-3xl font-readable mb-2 text-center">GIFT TRANSFER PROTOCOL</h3>
                     <p className="font-console text-lg text-center mb-6">Your presence means the world to us,and we'll surely miss anyone unable to attend. If you'd like to share your well-wishes or a gift,you may send it through the accounts below.</p>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <div className="iceland-font grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                       {CONFIG.gift.banks.map((bank, index) => (
-                        <div key={index} className="flex flex-col h-full bg-gray-50 border border-black/10 rounded-lg p-4 shadow-sm iceland-font">
+                        <div key={index} className="flex flex-col h-full bg-gray-50 border border-black/10 rounded-lg p-4 shadow-sm">
                           <div className="mb-2 text-sm text-gray-600 font-console">{bank.bankName}</div>
                           <div className="font-pixel text-2xl tracking-widest text-center my-2">{bank.accountNumber}</div>
                           <div className="text-center text-sm text-gray-700 mb-4">A/N {bank.accountHolder}</div>
